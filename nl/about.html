@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Over Ons</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Navigatie -->
+  <header class="bg-gray-600 text-white">
+    <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold text-gray-800">
+        <img src="files/logo.png" alt="Logo" class="h-14">
+      </a>
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+        <li><a href="about.html" class="hover:text-gray-300">Over Ons</a></li>
+        <li><a href="privacy.html" class="hover:text-gray-300">Privacybeleid</a></li>
+        <li><a href="terms.html" class="hover:text-gray-300">Algemene Voorwaarden</a></li>
+        <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+      </ul>
+      <!-- Hamburger Button -->
+      <button id="hamburger" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-700">
+      <ul class="flex flex-col space-y-2 p-4">
+        <li><a href="index.html" class="block hover:text-gray-300">Home</a></li>
+        <li><a href="about.html" class="block hover:text-gray-300">Over Ons</a></li>
+        <li><a href="services.html" class="block hover:text-gray-300">Diensten</a></li>
+        <li><a href="portfolio.html" class="block hover:text-gray-300">Portefeuille</a></li>
+        <li><a href="contact.html" class="block hover:text-gray-300">Contact</a></li>
+      </ul>
+    </div>
+  </header>  
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">Over Ons</h1>
+    <article class="prose max-w-none">
+      <p class="mb-6">
+        Welkom op de “Over Ons” pagina. Wij zijn <strong>UDRS Consulting</strong>, trots verbonden met Grant Thornton, en wij zijn toegewijd aan het bieden van uitgebreide adviezen en innovatieve oplossingen voor bedrijven en organisaties. Onze ervaring en inzet hebben ons in staat gesteld om te groeien en ons aan te passen aan een steeds veranderende zakelijke omgeving.
+      </p>
+      <p class="mb-6">
+        Met de filosofie “Wij gaan verder dan verwacht.”, streven we ernaar elke kans te verkennen om transformatie en vooruitgang voor onze klanten te stimuleren. Onze aanpak omvat verschillende servicegebieden, zoals Audit, Belastingen, Consulting, Outsourcing, Technologie en Procesautomatisering. Elk van deze gebieden is ontworpen om in te spelen op de specifieke uitdagingen waarmee organisaties zich in de huidige concurrerende markt geconfronteerd zien.
+      </p>
+      <p class="mb-6">
+        In het Auditgebied bieden we diensten aan die gericht zijn op het bieden van transparantie en vertrouwen in de presentatie van financiële overzichten. We werken gecoördineerd, met effectieve samenwerking en communicatie om ervoor te zorgen dat elk rapport voldoet aan de hoogste normen en internationale best practices. Onze rigoureuze processen stellen ons in staat om gebieden voor verbetering en optimalisatie in bedrijfsbeheer te identificeren.
+      </p>
+      <p class="mb-6">
+        Aan de andere kant zijn onze belastingdiensten gebaseerd op de voortdurende opleiding van onze specialistische medewerkers. We zetten ons in voor het beheren van fiscale uitdagingen met volledige transparantie, en vullen deze inspanningen aan met sterke financiële advisering. We helpen waarde te creëren, groei te stimuleren en risico's te beheren door gepersonaliseerde oplossingen aan te bieden die zorgen voor naleving van regelgeving en belastingoptimalisatie.
+      </p>
+      <p class="mb-6">
+        In het domein van Outsourcing faciliteren we administratieve en boekhoudkundige optimalisatie, waardoor bedrijven zich kunnen concentreren op hun kernactiviteiten terwijl wij operationele en administratieve processen beheren. Evenzo implementeren we in Technologie tools en digitale transformatie methodologieën die reageren op moderne uitdagingen, waarbij we innovatie en efficiëntie integreren in elke van onze diensten.
+      </p>
+      <p class="mb-6">
+        Procesautomatisering is een ander belangrijk onderdeel van onze diensten. We helpen bij het transformeren van interne operaties, waardoor tijd en kosten worden verminderd en het nemen van beslissingen wordt verbeterd met nauwkeurige gegevens. Door gebruik te maken van de nieuwste technologische innovaties stellen we onze klanten in staat zich aan te passen en te gedijen in een dynamische zakelijke omgeving.
+      </p>
+      <p class="mb-6">
+        Ons leiderschap wordt belichaamd door onze CEO en Managing Partner, wiens visie en toewijding het hele team inspireren. Hun boodschap is duidelijk: “We zijn verheugd omdat onze klanten UDRS Consulting als hun eerste keuze hebben erkend tussen de belangrijkste spelers in de advieswereld.” Deze filosofie drijft de organisatie om open, samenwerkende en op excellentie gerichte communicatie te behouden.
+      </p>
+      <p class="mb-6">
+        Bij UDRS Consulting werken we dagelijks aan het opbouwen van langdurige relaties op basis van vertrouwen, kwaliteit en gedeeld succes. Onze toewijding is het leveren van een uitgebreide service die niet alleen de huidige uitdagingen aanpakt, maar onze klanten ook voorbereidt op de eisen van de toekomst. We nodigen u uit om meer te leren over onze oplossingen en ons te vergezellen op de reis naar groei en innovatie.
+      </p>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap justify-between">
+        <!-- Footer Column: Connect -->
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">Connect</h2>
+          <ul>
+            <li class="mb-1"><a href="contact.html" class="hover:text-white">Neem contact op</a></li>
+          </ul>
+        </div>
+        <!-- Footer Column: About Us -->
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">Over Ons</h2>
+          <ul>
+            <li class="mb-1"><a href="about.html" class="hover:text-white">Over Ons</a></li>
+          </ul>
+        </div>
+        <!-- Footer Column: Legal -->
+        <div class="w-full md:w-1/3">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">Juridisch</h2>
+          <ul>
+            <li class="mb-1"><a href="privacy.html" class="hover:text-white">Privacybeleid</a></li>
+            <li class="mb-1"><a href="terms.html" class="hover:text-white">Algemene Voorwaarden</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-gray-700 pt-4 text-xs">
+        <p>
+          © 2025 UDRS Consulting - Alle rechten voorbehouden. “Grant Thornton” verwijst naar het merk waaronder de Grant Thornton lidfirma’s audit-, belasting- en adviesdiensten aanbieden. UDRS Consulting is een lidfirma van Grant Thornton International Ltd (GTIL). GTIL en de lidfirma’s zijn juridisch onafhankelijke entiteiten.
+        </p>
+        <br>
+        <p>
+          Bedrijfsnummer 00943935<br>
+          Adres: Lime St, London EC3M 7HR, VK<br>
+          Telefoonnummer: 01632 960189
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
