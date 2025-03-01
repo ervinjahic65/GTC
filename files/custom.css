@@ -16494,5 +16494,8 @@ button.nav-link:hover,button.nav-link:active,button.nav-link:focus-visible{
         min-height:70vh
     }
 }
+.glide__slide {
+    pointer-events: none !important;
+}
 /*# sourceMappingURL=onetrust.css.map */
  
