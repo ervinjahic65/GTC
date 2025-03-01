@@ -910,5 +910,61 @@
             </footer>
             <!-- END FOOTER -->
         </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              // Get the slides container, arrow buttons, and the carousel container for background changes
+              const slidesContainer = document.querySelector('.glide__slides');
+              const slides = slidesContainer.children;
+              const nextButton = document.querySelector('.slider__next');
+              const prevButton = document.querySelector('.slider__prev');
+              const carouselContainer = document.querySelector('.main-carousel');
+            
+              // Array of background images corresponding to each slide
+              const backgroundImages = [
+                'files/auditoria.webp',
+                'files/iimpuestos.webp',
+                'files/consultoria.webp',
+                'files/outsourcing-1440x659px.webp',
+                'files/soluciones-tecnologicass.webp',
+                'files/banner-automatizacion-y-analisis-de-datos.webp'
+              ];
+            
+              // Calculate the full width of one slide (including margins)
+              const firstSlide = slides[0];
+              const slideStyles = window.getComputedStyle(firstSlide);
+              const slideWidth = firstSlide.offsetWidth +
+                                 parseInt(slideStyles.marginLeft) +
+                                 parseInt(slideStyles.marginRight);
+            
+              // Current slide index (starting at 0)
+              let currentIndex = 0;
+            
+              // Update slider position and background image
+              function updateSlidePosition() {
+                // Move the slides container
+                slidesContainer.style.transform = `translate3d(-${currentIndex * slideWidth}px, 0, 0)`;
+                
+                // Use modulo to safely select the correct background image
+                const bgIndex = currentIndex % backgroundImages.length;
+                
+                // Update background image of the carousel container
+                carouselContainer.style.backgroundImage = `url(${backgroundImages[bgIndex]})`;
+                carouselContainer.style.backgroundSize = 'cover';
+                carouselContainer.style.backgroundPosition = 'center';
+              }
+            
+              // Event listener for the next arrow
+              nextButton.addEventListener('click', function() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                updateSlidePosition();
+              });
+            
+              // Event listener for the previous arrow
+              prevButton.addEventListener('click', function() {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                updateSlidePosition();
+              });
+            });
+        </script>   
     </body>
 </html>
