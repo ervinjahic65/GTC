@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <header class="bg-gray-600 text-white">
+    <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold text-gray-800">
+        <img src="files/logo.png" alt="Logo" class="h-14">
+      </a>
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+        <li><a href="about.html" class="hover:text-gray-300">About</a></li>
+        <li><a href="privacy.html" class="hover:text-gray-300">Privacy Policy</a></li>
+        <li><a href="terms.html" class="hover:text-gray-300">Terms and Conditions</a></li>
+        <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+      </ul>
+      <!-- Hamburger Button -->
+      <button id="hamburger" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-700">
+      <ul class="flex flex-col space-y-2 p-4">
+        <li><a href="index.html" class="block hover:text-gray-300">Home</a></li>
+        <li><a href="about.html" class="block hover:text-gray-300">About</a></li>
+        <li><a href="services.html" class="block hover:text-gray-300">Services</a></li>
+        <li><a href="portfolio.html" class="block hover:text-gray-300">Portfolio</a></li>
+        <li><a href="contact.html" class="block hover:text-gray-300">Contact</a></li>
+      </ul>
+    </div>
+  </header>  
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">About Us</h1>
+    <article class="prose max-w-none">
+      <p class="mb-6">
+        Welcome to the “About Us” section. We are <strong>UDRS Consulting</strong>, proudly affiliated with Grant Thornton, and we are dedicated to providing comprehensive advice and innovative solutions to businesses and organizations. Our experience and commitment have enabled us to grow and adapt to an ever-changing business environment.
+      </p>
+      <p class="mb-6">
+        With the philosophy “We go above and beyond.”, we strive to explore every opportunity to drive transformation and progress for our clients. Our approach spans various service areas, such as Audit, Taxes, Consulting, Outsourcing, Technology, and Process Automation. Each of these areas has been designed to address the specific challenges that organizations face in today's competitive market.
+      </p>
+      <p class="mb-6">
+        In the Audit area, we offer services aimed at providing transparency and confidence in the presentation of financial statements. We work in a coordinated manner, cooperating and communicating effectively to ensure that each report meets the highest standards and international best practices. Our rigorous processes allow us to identify areas for improvement and optimization in business management.
+      </p>
+      <p class="mb-6">
+        On the other hand, our Tax services are based on the continuous training of our specialist executives. We are committed to managing fiscal challenges with complete transparency, complementing these efforts with strong financial consulting. We help create value, drive growth, and manage risks by offering personalized solutions that ensure regulatory compliance and tax optimization.
+      </p>
+      <p class="mb-6">
+        In the realm of Outsourcing, we facilitate administrative and accounting optimization, allowing companies to focus on their core activities while we manage operational and administrative processes. Likewise, in Technology, we implement tools and digital transformation methodologies that respond to modern challenges, integrating innovation and efficiency into each of our services.
+      </p>
+      <p class="mb-6">
+        Process Automation is another key component of our offerings. We help transform internal operations, reducing time and costs, and improving decision-making with accurate data. By leveraging the latest technological innovations, we enable our clients to adapt and thrive in a dynamic business environment.
+      </p>
+      <p class="mb-6">
+        Our leadership is embodied by our CEO and Managing Partner, whose vision and commitment inspire the entire team. Their message is clear: “We are delighted because our clients have recognized UDRS Consulting as their first choice among the most important players in the consulting world.” This philosophy drives the organization to maintain open, collaborative, and excellence-oriented communication.
+      </p>
+      <p class="mb-6">
+        At UDRS Consulting, we work daily to build long-lasting relationships based on trust, quality, and shared success. Our commitment is to provide a comprehensive service that not only addresses current challenges but also prepares our clients for the future's demands. We invite you to learn more about our solutions and join us on the journey towards growth and innovation.
+      </p>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap justify-between">
+        <!-- Footer Column: Connect -->
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">Connect</h2>
+          <ul>
+            <li class="mb-1"><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Footer Column: About Us -->
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">About Us</h2>
+          <ul>
+            <li class="mb-1"><a href="about.html" class="hover:text-white">About Us</a></li>
+          </ul>
+        </div>
+        <!-- Footer Column: Legal -->
+        <div class="w-full md:w-1/3">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">Legal</h2>
+          <ul>
+            <li class="mb-1"><a href="privacy.html" class="hover:text-white">Privacy Policy</a></li>
+            <li class="mb-1"><a href="terms.html" class="hover:text-white">Terms and Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-gray-700 pt-4 text-xs">
+        <p>
+          © 2025 UDRS Consulting - All rights reserved. “Grant Thornton” refers to the brand under which the Grant Thornton member firms provide audit, tax, and consulting services. UDRS Consulting is a member firm of Grant Thornton International Ltd (GTIL). GTIL and the member firms are legally independent entities.
+        </p>
+        <br>
+        <p>
+          Company number 00943935 <br>
+          Address: Lime St, London EC3M 7HR, UK <br>
+          Phone number: 01632 960189  <br>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

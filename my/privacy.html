@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <header class="bg-gray-600 text-white">
+    <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold text-gray-800">
+        <img src="files/logo.png" alt="Logo" class="h-14">
+      </a>
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+        <li><a href="about.html" class="hover:text-gray-300">About</a></li>
+        <li><a href="privacy.html" class="hover:text-gray-300">Privacy Policy</a></li>
+        <li><a href="terms.html" class="hover:text-gray-300">Terms and Conditions</a></li>
+        <li><a href="contact.html" class="hover:text-gray-300">Contact</a></li>
+      </ul>
+      <!-- Hamburger Button -->
+      <button id="hamburger" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-700">
+      <ul class="flex flex-col space-y-2 p-4">
+        <li><a href="index.html" class="block hover:text-gray-300">Home</a></li>
+        <li><a href="about.html" class="block hover:text-gray-300">About</a></li>
+        <li><a href="services.html" class="block hover:text-gray-300">Services</a></li>
+        <li><a href="portfolio.html" class="block hover:text-gray-300">Portfolio</a></li>
+        <li><a href="contact.html" class="block hover:text-gray-300">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">Privacy Policy</h1>
+    <article class="prose max-w-none">
+      <p class="mb-6">
+        At <strong>UDRS Consulting</strong>, a proud member of Grant Thornton International Ltd, we are committed to protecting the privacy of our clients, users, and visitors. This Privacy Policy outlines how we collect, use, disclose, and safeguard the personal information we obtain through our website and services. Our goal is to ensure transparency and respect for the rights of every individual in the handling of their data.
+      </p>
+      <p class="mb-6">
+        We collect information in various ways, including data provided directly by users through contact forms, online registrations, and other communication channels. This information may include names, email addresses, phone numbers, and other details necessary to provide high-quality service. All information is used solely for legitimate purposes, such as improving our services, personalizing the user experience, and maintaining effective communication.
+      </p>
+      <p class="mb-6">
+        Our website may use cookies and similar technologies to gather anonymous and statistical data that help us analyze traffic, improve content, and optimize platform functionality. Cookies are small text files stored on the user's device and do not contain personally identifiable information, allowing us to better understand the preferences and behaviors of our visitors.
+      </p>
+      <p class="mb-6">
+        In certain circumstances, we may share personal information with trusted third parties that work with us to provide essential services, such as technology providers, analytics services, and business partners. We ensure that such third parties adhere to security and confidentiality standards equivalent to ours, ensuring that the information is handled securely and in accordance with the law.
+      </p>
+      <p class="mb-6">
+        Users have the right to access, correct, or request the deletion of their personal information. If you wish to exercise any of these rights or have questions about how we use your data, please contact our customer service team. We are committed to responding to all requests promptly and implementing appropriate measures to protect the privacy and security of your information.
+      </p>
+      <p class="mb-6">
+        We implement rigorous security measures, both technical and organizational, to safeguard the integrity and confidentiality of personal data. These measures include the use of encryption protocols, secure authentication systems, and restricted access controls, which are periodically updated to address new threats and vulnerabilities.
+      </p>
+      <p class="mb-6">
+        Our Privacy Policy may occasionally be updated to reflect changes in our practices or applicable regulations. Any updates will be posted on our website, and users are encouraged to review this section periodically to stay informed about how their data is protected. Continued use of the website after the posting of changes will constitute acceptance of the updated terms.
+      </p>
+      <p class="mb-6">
+        At UDRS Consulting, we value the trust you place in us and continually strive to maintain high standards in protecting your privacy. We appreciate your interest and are available for any further inquiries you may have regarding this Privacy Policy.
+      </p>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap justify-between">
+        <!-- Footer Column: Connect -->
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">Connect</h2>
+          <ul>
+            <li class="mb-1"><a href="contact.html" class="hover:text-white">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Footer Column: About Us -->
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">About Us</h2>
+          <ul>
+            <li class="mb-1"><a href="about.html" class="hover:text-white">About Us</a></li>
+          </ul>
+        </div>
+        <!-- Footer Column: Legal -->
+        <div class="w-full md:w-1/3">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">Legal</h2>
+          <ul>
+            <li class="mb-1"><a href="privacy.html" class="hover:text-white">Privacy Policy</a></li>
+            <li class="mb-1"><a href="terms.html" class="hover:text-white">Terms and Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-gray-700 pt-4 text-xs">
+        <p>
+          © 2025 UDRS Consulting - All rights reserved. “Grant Thornton” refers to the brand under which the Grant Thornton member firms provide audit, tax, and consulting services. UDRS Consulting is a member firm of Grant Thornton International Ltd (GTIL). GTIL and the member firms are legally independent entities.
+        </p>
+        <br>
+        <p>
+          Company number 00943935 <br>
+          Address: Lime St, London EC3M 7HR, UK <br>
+          Phone number: 01632 960189  <br>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
