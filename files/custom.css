@@ -415,7 +415,7 @@ body{
     margin:0
 }
 .main-header {
-    min-height: 100px;
+    min-height: 120px;
 }
 .overflowHidden,.overflowHidden{
     overflow:hidden
@@ -6590,7 +6590,6 @@ header{
     overflow:initial
 }
 .header-logo{
-    height:40px;
     max-width:216px
 }
 .header-logo .desktop-logo{
@@ -8643,7 +8642,7 @@ button.nav-link:hover,button.nav-link:active,button.nav-link:focus-visible{
         z-index:11
     }
     .main-header .header-logo{
-        height:32px;
+        height:55px;
         max-width:172px
     }
     .main-header .header-logo .desktop-logo svg,.main-header .header-logo .desktop-logo img{
