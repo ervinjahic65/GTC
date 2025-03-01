@@ -1017,6 +1017,29 @@
               // Initial update.
               updateSlider();
             });
-        </script>               
+        </script>     
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              // Selecciona todos los menús que tengan la clase .footer-nav__menu
+              const footerMenus = document.querySelectorAll('.footer-nav__menu');
+            
+              footerMenus.forEach(menu => {
+                // Dentro de cada .footer-nav__menu, busca el botón
+                const toggleButton = menu.querySelector('.collapse-expand__btn');
+                
+                // Escucha el evento de clic en el botón
+                toggleButton.addEventListener('click', function() {
+                  // Lee el estado actual de aria-expanded
+                  const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                  
+                  // Cambia el valor de aria-expanded al opuesto
+                  this.setAttribute('aria-expanded', !isExpanded);
+                  
+                  // Alterna la clase que expande o colapsa el menú
+                  menu.classList.toggle('footer-nav__menu--expanded', !isExpanded);
+                });
+              });
+            });
+        </script>              
     </body>
 </html>
