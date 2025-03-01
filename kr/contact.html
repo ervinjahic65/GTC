@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>문의하기</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <header class="bg-gray-600 text-white">
+    <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="index.html" class="text-2xl font-bold text-gray-800">
+            <img src="files/logo.png" alt="로고" class="h-14">
+        </a>
+        <ul class="hidden md:flex space-x-6">
+            <li><a href="index.html" class="hover:text-gray-300">홈</a></li>
+            <li><a href="about.html" class="hover:text-gray-300">회사 소개</a></li>
+            <li><a href="privacy.html" class="hover:text-gray-300">개인정보 처리방침</a></li>
+            <li><a href="terms.html" class="hover:text-gray-300">이용 약관</a></li>
+            <li><a href="contact.html" class="hover:text-gray-300">문의하기</a></li>
+        </ul>
+        <button id="hamburger" class="md:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </nav>
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-700">
+        <ul class="flex flex-col space-y-2 p-4">
+            <li><a href="index.html" class="block hover:text-gray-300">홈</a></li>
+            <li><a href="about.html" class="block hover:text-gray-300">회사 소개</a></li>
+            <li><a href="services.html" class="block hover:text-gray-300">서비스</a></li>
+            <li><a href="portfolio.html" class="block hover:text-gray-300">포트폴리오</a></li>
+            <li><a href="contact.html" class="block hover:text-gray-300">문의하기</a></li>
+        </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">Contact</h1>
+    <article class="prose max-w-none">
+      <p class="mb-6">
+          서비스에 대한 질문, 의견 또는 추가 정보 요청이 있으시면 언제든지 저희에게 연락해 주십시오. <strong>UDRS 컨설팅</strong>은 개인 맞춤형의 효과적인 서비스를 제공하기 위해 최선을 다하고 있습니다.
+      </p>
+      <p class="mb-6">
+          아래 양식을 통해 또는 연락처 정보를 사용하여 저희에게 연락하실 수 있습니다. 저희 팀에서 기꺼이 도와드리겠으며 최대한 빨리 문의에 답변해 드리겠습니다.
+      </p>
+    </article>
+
+    <!-- Contact Form -->
+    <section class="mt-8">
+      <form id="form" class="max-w-xl mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                이름
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                   id="name" type="text" placeholder="이름을 입력하세요" required>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                이메일
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                   id="email" type="email" placeholder="you@example.com" required>
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="subject">
+                제목
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                   id="subject" type="text" placeholder="메시지 제목을 입력하세요" required>
+        </div>
+        <div class="mb-6">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+                메시지
+            </label>
+            <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      id="message" rows="5" placeholder="메시지를 입력하세요..." required></textarea>
+        </div>
+        <div class="flex items-center justify-between">
+            <button class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    type="submit">
+                메시지 보내기
+            </button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-between">
+            <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">연결</h2>
+                <ul>
+                    <li class="mb-1"><a href="contact.html" class="hover:text-white">문의하기</a></li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">회사 소개</h2>
+                <ul>
+                    <li class="mb-1"><a href="about.html" class="hover:text-white">회사 소개</a></li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/3">
+                <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">법률</h2>
+                <ul>
+                    <li class="mb-1"><a href="privacy.html" class="hover:text-white">개인정보 처리방침</a></li>
+                    <li class="mb-1"><a href="terms.html" class="hover:text-white">이용 약관</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-8 border-t border-gray-700 pt-4 text-xs">
+            <p>
+                © 2025 UDRS 컨설팅 - 모든 권리 보유. “Grant Thornton”은 Grant Thornton 회원사가 감사, 세무 및 컨설팅 서비스를 제공하는 브랜드입니다. UDRS 컨설팅은 Grant Thornton International Ltd (GTIL)의 회원사입니다. GTIL과 회원사는 법적으로 독립적인 주체입니다.
+            </p>
+            <br>
+            <p>
+                주소: 서울특별시 중구 서소문동 21-1 <br>
+                전화: +34 986 227 374 <br>
+                법인 등록 번호: 4010501096087 <br>
+            </p>
+        </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  <script>
+    document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        document.getElementById("form").innerHTML = '<div class="flex justify-center"><img src="files/loading.gif" width="80"></div>';
+
+        setTimeout(() => {
+            document.getElementById("form").innerHTML = '<div class="flex justify-center"><p style="font-size: 24px; color: black; font-weight: 700;">등록해 주셔서 감사합니다. 담당자가 곧 연락드리겠습니다.</p></div>';
+        }, 2000);
+    });
+  </script>  
+</body>
+</html>

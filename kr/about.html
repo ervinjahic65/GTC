@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>소개</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <header class="bg-gray-600 text-white">
+    <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="index.html" class="text-2xl font-bold text-gray-800">
+            <img src="files/logo.png" alt="로고" class="h-14">
+        </a>
+        <ul class="hidden md:flex space-x-6">
+            <li><a href="index.html" class="hover:text-gray-300">홈</a></li>
+            <li><a href="about.html" class="hover:text-gray-300">회사 소개</a></li>
+            <li><a href="privacy.html" class="hover:text-gray-300">개인정보 처리방침</a></li>
+            <li><a href="terms.html" class="hover:text-gray-300">이용 약관</a></li>
+            <li><a href="contact.html" class="hover:text-gray-300">문의하기</a></li>
+        </ul>
+        <button id="hamburger" class="md:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </nav>
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-700">
+        <ul class="flex flex-col space-y-2 p-4">
+            <li><a href="index.html" class="block hover:text-gray-300">홈</a></li>
+            <li><a href="about.html" class="block hover:text-gray-300">회사 소개</a></li>
+            <li><a href="services.html" class="block hover:text-gray-300">서비스</a></li>
+            <li><a href="portfolio.html" class="block hover:text-gray-300">포트폴리오</a></li>
+            <li><a href="contact.html" class="block hover:text-gray-300">문의하기</a></li>
+        </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">회사 소개</h1>
+    <article class="prose max-w-none">
+        <p class="mb-6">
+            “회사 소개” 섹션에 오신 것을 환영합니다. 저희는 Grant Thornton과 자랑스럽게 제휴한 <strong>UDRS 컨설팅</strong>이며, 기업과 조직에 종합적인 자문과 혁신적인 솔루션을 제공하기 위해 헌신하고 있습니다. 저희의 경험과 헌신은 끊임없이 변화하는 비즈니스 환경에 맞춰 성장하고 적응할 수 있도록 해 주었습니다.
+        </p>
+        <p class="mb-6">
+            “우리는 그 이상을 추구합니다.”라는 철학으로 고객을 위한 변화와 발전을 추진하기 위해 모든 기회를 탐색하기 위해 노력합니다. 저희의 접근 방식은 감사, 세무, 컨설팅, 아웃소싱, 기술 및 프로세스 자동화와 같은 다양한 서비스 영역에 걸쳐 있습니다. 이러한 각 영역은 오늘날 경쟁적인 시장에서 조직이 직면하는 특정 문제를 해결하기 위해 설계되었습니다.
+        </p>
+        <p class="mb-6">
+            감사 영역에서는 재무제표 제시의 투명성과 신뢰를 제공하는 것을 목표로 하는 서비스를 제공합니다. 각 보고서가 최고 수준 및 국제 모범 사례를 충족하도록 효과적으로 조정, 협력 및 소통합니다. 저희의 엄격한 프로세스를 통해 비즈니스 관리에서 개선 및 최적화할 영역을 식별할 수 있습니다.
+        </p>
+        <p class="mb-6">
+            한편, 저희의 세무 서비스는 전문 임원의 지속적인 교육을 기반으로 합니다. 저희는 완전한 투명성으로 재정 문제를 관리하기 위해 최선을 다하고 있으며, 이러한 노력을 강력한 재무 컨설팅으로 보완합니다. 규정 준수 및 세금 최적화를 보장하는 맞춤형 솔루션을 제공하여 가치를 창출하고 성장을 주도하며 위험을 관리하도록 돕습니다.
+        </p>
+        <p class="mb-6">
+            아웃소싱 영역에서는 관리 및 회계 최적화를 촉진하여 기업이 핵심 활동에 집중하는 동안 운영 및 관리 프로세스를 관리할 수 있도록 합니다. 마찬가지로 기술 영역에서는 각 서비스에 혁신과 효율성을 통합하여 현대적인 문제에 대응하는 도구와 디지털 전환 방법론을 구현합니다.
+        </p>
+        <p class="mb-6">
+            프로세스 자동화는 저희 제품의 또 다른 핵심 구성 요소입니다. 정확한 데이터를 통해 의사 결정을 개선하고 시간과 비용을 절감하여 내부 운영을 혁신하도록 돕습니다. 최신 기술 혁신을 활용하여 고객이 역동적인 비즈니스 환경에 적응하고 번창할 수 있도록 지원합니다.
+        </p>
+        <p class="mb-6">
+            저희의 리더십은 전체 팀에 비전과 헌신을 불어넣는 CEO 및 관리 파트너에 의해 구현됩니다. 그들의 메시지는 분명합니다. “저희 고객들이 컨설팅 업계의 가장 중요한 주체들 사이에서 UDRS 컨설팅을 첫 번째 선택으로 인정해 주셔서 기쁩니다.” 이 철학은 조직이 개방적이고 협력적이며 탁월성을 지향하는 커뮤니케이션을 유지하도록 추진합니다.
+        </p>
+        <p class="mb-6">
+            UDRS 컨설팅은 신뢰, 품질 및 공유된 성공을 기반으로 장기적인 관계를 구축하기 위해 매일 노력합니다. 저희의 약속은 현재의 문제를 해결할 뿐만 아니라 미래의 요구에 고객을 대비시키는 포괄적인 서비스를 제공하는 것입니다. 저희의 솔루션에 대해 자세히 알아보고 성장과 혁신을 향한 여정에 동참하시기를 바랍니다.
+        </p>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-between">
+            <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">연결</h2>
+                <ul>
+                    <li class="mb-1"><a href="contact.html" class="hover:text-white">문의하기</a></li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">회사 소개</h2>
+                <ul>
+                    <li class="mb-1"><a href="about.html" class="hover:text-white">회사 소개</a></li>
+                </ul>
+            </div>
+            <div class="w-full md:w-1/3">
+                <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">법률</h2>
+                <ul>
+                    <li class="mb-1"><a href="privacy.html" class="hover:text-white">개인정보 처리방침</a></li>
+                    <li class="mb-1"><a href="terms.html" class="hover:text-white">이용 약관</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-8 border-t border-gray-700 pt-4 text-xs">
+            <p>
+                © 2025 UDRS 컨설팅 - 모든 권리 보유. “Grant Thornton”은 Grant Thornton 회원사가 감사, 세무 및 컨설팅 서비스를 제공하는 브랜드입니다. UDRS 컨설팅은 Grant Thornton International Ltd (GTIL)의 회원사입니다. GTIL과 회원사는 법적으로 독립적인 주체입니다.
+            </p>
+            <br>
+            <p>
+                주소: 서울특별시 중구 서소문동 21-1 <br>
+                전화: +34 986 227 374 <br>
+                법인 등록 번호: 4010501096087 <br>
+            </p>
+        </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
