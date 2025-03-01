@@ -968,19 +968,20 @@
               const container = document.querySelector('.about-us-slider');
               const track = container.querySelector('.glide__slides');
               
-              // Get only the original slides (exclude clones if any)
-              const slides = Array.from(track.children).filter(slide => !slide.classList.contains('glide__slide--clone'));
-              const totalItems = slides.length; // e.g. 4 original items
+              // Get all slide elements (assume there are 10 items)
+              const slides = Array.from(track.children);
+              const totalItems = slides.length; // should be 10
             
               // Current slide index (starting at 0)
               let currentIndex = 0;
             
-              // Determine visible slides based on viewport width.
+              // Determine the number of visible slides based on viewport width.
               function getVisibleCount() {
+                // On mobile (<768px) show 1 slide; on desktop, show 3 slides.
                 return window.innerWidth < 768 ? 1 : 3;
               }
               
-              // Calculate slide width based on container's width and visible count.
+              // Calculate the width of one slide based on the container's width.
               function getSlideWidth() {
                 const visibleCount = getVisibleCount();
                 return container.clientWidth / visibleCount;
@@ -989,13 +990,12 @@
               // Update the slider transform to show the correct set of slides.
               function updateSlider() {
                 const slideWidth = getSlideWidth();
-                // Calculate offset in pixels
-                const offset = currentIndex * slideWidth;
+                // Calculate offset in pixels: shift by currentIndex * slideWidth.
                 track.style.transition = "transform 400ms cubic-bezier(0.165, 0.84, 0.44, 1)";
-                track.style.transform = `translate3d(-${offset}px, 0, 0)`;
+                track.style.transform = `translate3d(-${currentIndex * slideWidth}px, 0, 0)`;
               }
-            
-              // Function to move slider to next set every 3 seconds.
+              
+              // Function to move slider to next position every 3 seconds.
               function autoSlide() {
                 const visibleCount = getVisibleCount();
                 // If currentIndex reaches the last valid position, reset to 0.
@@ -1006,15 +1006,16 @@
                 }
                 updateSlider();
               }
-            
-              // Start the auto-slide interval (every 3000ms)
-              let autoSlideInterval = setInterval(autoSlide, 1500);
-            
-              // On window resize, recalc slide widths and update slider.
-              window.addEventListener('resize', function() {
-                updateSlider();
-              });
+              
+              // Start auto-slide interval every 3000ms.
+              let autoSlideInterval = setInterval(autoSlide, 3000);
+              
+              // Update slider on window resize to adjust slide widths.
+              window.addEventListener('resize', updateSlider);
+              
+              // Initial update.
+              updateSlider();
             });
-        </script>   
+        </script>               
     </body>
 </html>
