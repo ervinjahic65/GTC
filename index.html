@@ -711,10 +711,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <ul class="glide__bullets show" data-label="Slide {0} of {1}">
-                                            <li><button class="glide__bullet glide__bullet--active" data-go="0" aria-current="true" title="Slide 1 of 2"></button></li>
-                                            <li><button class="glide__bullet" data-go="3" aria-current="false" title="Slide 2 of 2"></button></li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -963,6 +959,60 @@
               prevButton.addEventListener('click', function() {
                 currentIndex = (currentIndex - 1 + slides.length) % slides.length;
                 updateSlidePosition();
+              });
+            });
+        </script>   
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              // Select the slider container and the track element holding the slides.
+              const container = document.querySelector('.about-us-slider');
+              const track = container.querySelector('.glide__slides');
+              
+              // Get only the original slides (exclude clones if any)
+              const slides = Array.from(track.children).filter(slide => !slide.classList.contains('glide__slide--clone'));
+              const totalItems = slides.length; // e.g. 4 original items
+            
+              // Current slide index (starting at 0)
+              let currentIndex = 0;
+            
+              // Determine visible slides based on viewport width.
+              function getVisibleCount() {
+                return window.innerWidth < 768 ? 1 : 3;
+              }
+              
+              // Calculate slide width based on container's width and visible count.
+              function getSlideWidth() {
+                const visibleCount = getVisibleCount();
+                return container.clientWidth / visibleCount;
+              }
+              
+              // Update the slider transform to show the correct set of slides.
+              function updateSlider() {
+                const slideWidth = getSlideWidth();
+                // Calculate offset in pixels
+                const offset = currentIndex * slideWidth;
+                track.style.transition = "transform 400ms cubic-bezier(0.165, 0.84, 0.44, 1)";
+                track.style.transform = `translate3d(-${offset}px, 0, 0)`;
+              }
+            
+              // Function to move slider to next set every 3 seconds.
+              function autoSlide() {
+                const visibleCount = getVisibleCount();
+                // If currentIndex reaches the last valid position, reset to 0.
+                if (currentIndex >= totalItems - visibleCount) {
+                  currentIndex = 0;
+                } else {
+                  currentIndex++;
+                }
+                updateSlider();
+              }
+            
+              // Start the auto-slide interval (every 3000ms)
+              let autoSlideInterval = setInterval(autoSlide, 1500);
+            
+              // On window resize, recalc slide widths and update slider.
+              window.addEventListener('resize', function() {
+                updateSlider();
               });
             });
         </script>   
