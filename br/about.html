@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sobre Nós</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <header class="bg-gray-600 text-white">
+    <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold text-gray-800">
+        <img src="files/logo.png" alt="Logo" class="h-14">
+      </a>
+      <!-- Menú de Escritorio -->
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="hover:text-gray-300">Início</a></li>
+        <li><a href="about.html" class="hover:text-gray-300">Sobre</a></li>
+        <li><a href="privacy.html" class="hover:text-gray-300">Política de privacidade</a></li>
+        <li><a href="terms.html" class="hover:text-gray-300">Termos e condições</a></li>
+        <li><a href="contact.html" class="hover:text-gray-300">Contato</a></li>
+      </ul>
+      <!-- Botón de Hamburguesa -->
+      <button id="hamburger" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <!-- Menú Móvil -->
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-700">
+      <ul class="flex flex-col space-y-2 p-4">
+        <li><a href="index.html" class="block hover:text-gray-300">Início</a></li>
+        <li><a href="about.html" class="block hover:text-gray-300">Sobre</a></li>
+        <li><a href="services.html" class="block hover:text-gray-300">Serviços</a></li>
+        <li><a href="portfolio.html" class="block hover:text-gray-300">Portfólio</a></li>
+        <li><a href="contact.html" class="block hover:text-gray-300">Contato</a></li>
+      </ul>
+    </div>
+  </header>  
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">Sobre Nós</h1>
+    <article class="prose max-w-none">
+      <p class="mb-6">
+        Bem-vindos à seção “Sobre Nós”. Somos <strong>UDRS Consulting</strong>, orgulhosamente associados à Grant Thornton, e estamos dedicados a oferecer assessoria abrangente e soluções inovadoras para empresas e organizações. Nossa experiência e compromisso nos permitiram crescer e nos adaptar a um ambiente empresarial em constante evolução.
+      </p>
+      <p class="mb-6">
+        Com a filosofia “Vamos além.”, nos esforçamos para explorar cada oportunidade de impulsionar a transformação e o progresso de nossos clientes. Nosso enfoque abrange diversas áreas de serviço, tais como Auditoria, Impostos, Consultoria, Outsourcing, Tecnologia e Automação de processos. Cada uma dessas áreas foi concebida para enfrentar os desafios específicos que as organizações enfrentam no competitivo mercado atual.
+      </p>
+      <p class="mb-6">
+        Na área de <strong>Auditoria</strong>, oferecemos serviços voltados a proporcionar transparência e confiança na apresentação dos demonstrativos financeiros. Trabalhamos de forma coordenada, cooperando e comunicando efetivamente para garantir que cada relatório atenda aos mais altos padrões e melhores práticas internacionais. Nossos processos rigorosos permitem identificar áreas de melhoria e otimização na gestão empresarial.
+      </p>
+      <p class="mb-6">
+        Por outro lado, nossos serviços de <strong>Impostos</strong> baseiam-se na constante capacitação dos nossos executivos especialistas. Comprometemo-nos a gerenciar os desafios fiscais com total transparência, complementando esses esforços com uma sólida consultoria financeira. Ajudamos a criar valor, gerar crescimento e gerenciar riscos, oferecendo soluções personalizadas que garantem o cumprimento normativo e a otimização fiscal.
+      </p>
+      <p class="mb-6">
+        No âmbito do <strong>Outsourcing</strong>, facilitamos a otimização administrativa e contábil, permitindo que as empresas se concentrem em suas atividades principais enquanto nós gerenciamos os processos operacionais e administrativos. Da mesma forma, em <strong>Tecnologia</strong>, implementamos ferramentas e metodologias de transformação digital que atendem aos desafios modernos, integrando inovação e eficiência em cada um dos nossos serviços.
+      </p>
+      <p class="mb-6">
+        A <strong>Automação de Processos</strong> é outra peça chave em nossa oferta. Ajudamos a transformar as operações internas, reduzindo tempos e custos, e melhorando a tomada de decisões com dados precisos. Ao aproveitar as últimas inovações tecnológicas, contribuímos para que nossos clientes se adaptem e prosperem em um ambiente empresarial dinâmico.
+      </p>
+      <p class="mb-6">
+        Nosso liderança é encarnada pelo CEO e Managing Partner, cuja visão e compromisso inspiram toda a equipe. Sua mensagem é clara: “Estamos felizes porque nossos clientes reconheceram a UDRS Consulting como sua primeira opção entre os atores mais importantes do mundo da consultoria.” Essa filosofia impulsiona a organização a manter uma comunicação aberta, colaborativa e orientada para a excelência.
+      </p>
+      <p class="mb-6">
+        Na UDRS Consulting, trabalhamos diariamente para construir relacionamentos duradouros baseados na confiança, na qualidade e no sucesso compartilhado. Nosso compromisso é oferecer um serviço integral que não só responde aos desafios atuais, mas também prepara nossos clientes para os desafios do futuro. Convidamos você a conhecer mais sobre nossas soluções e a se juntar a nós no caminho rumo ao crescimento e à inovação.
+      </p>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap justify-between">
+        <!-- Footer Column: Conecta -->
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">Conecte</h2>
+          <ul>
+            <li class="mb-1"><a href="contact.html" class="hover:text-white">Contate-nos</a></li>
+          </ul>
+        </div>
+        <!-- Footer Column: Sobre Nós -->
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">Sobre Nós</h2>
+          <ul>
+            <li class="mb-1"><a href="about.html" class="hover:text-white">Sobre Nós</a></li>
+          </ul>
+        </div>
+        <!-- Footer Column: Legal -->
+        <div class="w-full md:w-1/3">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">Legal</h2>
+          <ul>
+            <li class="mb-1"><a href="privacy.html" class="hover:text-white">Política de Privacidade</a></li>
+            <li class="mb-1"><a href="terms.html" class="hover:text-white">Termos e Condições</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-gray-700 pt-4 text-xs">
+        <p>
+          © 2025 UDRS Consulting - Todos os direitos reservados. “Grant Thornton” refere-se à marca sob a qual as firmas membros da Grant Thornton prestam serviços de auditoria, impostos e consultoria. UDRS Consulting é uma firma membro da Grant Thornton International Ltd (GTIL). GTIL e as firmas membros são entidades legais independentes.
+        </p>
+        <br>
+        <p>
+          CNPJ: 78.989.613/0001-90<br>
+          Inscrição Estadual: 8324829-77<br>
+          Endereço: 974 Rua Itaguaí, Mangabeira, Feira de Santana, 44056-516<br>
+          Número de telefone: (75) 2871-8215
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

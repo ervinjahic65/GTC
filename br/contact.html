@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contato</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <header class="bg-gray-600 text-white">
+    <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold text-gray-800">
+        <img src="files/logo.png" alt="Logo" class="h-14">
+      </a>
+      <!-- Menú de Escritorio -->
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="hover:text-gray-300">Início</a></li>
+        <li><a href="about.html" class="hover:text-gray-300">Sobre</a></li>
+        <li><a href="privacy.html" class="hover:text-gray-300">Política de privacidade</a></li>
+        <li><a href="terms.html" class="hover:text-gray-300">Termos e condições</a></li>
+        <li><a href="contact.html" class="hover:text-gray-300">Contato</a></li>
+      </ul>
+      <!-- Botón de Hamburguesa -->
+      <button id="hamburger" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <!-- Menú Móvil -->
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-700">
+      <ul class="flex flex-col space-y-2 p-4">
+        <li><a href="index.html" class="block hover:text-gray-300">Início</a></li>
+        <li><a href="about.html" class="block hover:text-gray-300">Sobre</a></li>
+        <li><a href="services.html" class="block hover:text-gray-300">Serviços</a></li>
+        <li><a href="portfolio.html" class="block hover:text-gray-300">Portfólio</a></li>
+        <li><a href="contact.html" class="block hover:text-gray-300">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">Contato</h1>
+    <article class="prose max-w-none">
+      <p class="mb-6">
+        Se você tiver dúvidas, comentários ou desejar solicitar informações adicionais sobre nossos serviços, não hesite em entrar em contato conosco. Na <strong>UDRS Consulting</strong> estamos comprometidos em oferecer um atendimento personalizado e eficaz.
+      </p>
+      <p class="mb-6">
+        Você pode entrar em contato conosco através do formulário abaixo ou por meio dos nossos dados de contato. Nossa equipe terá o prazer de ajudá-lo e responderá à sua consulta o mais breve possível.
+      </p>
+    </article>
+
+    <!-- Contact Form -->
+    <section class="mt-8">
+      <form id="form" class="max-w-xl mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+            Nome
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                 id="name" type="text" placeholder="Seu nome" required>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+            E-mail
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                 id="email" type="email" placeholder="seu@exemplo.com" required>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="subject">
+            Assunto
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                 id="subject" type="text" placeholder="Assunto da sua mensagem" required>
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+            Mensagem
+          </label>
+          <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
+                    id="message" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+        </div>
+        <div class="flex items-center justify-between">
+          <button class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
+                  type="submit">
+            Enviar Mensagem
+          </button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap justify-between">
+        <!-- Footer Column: Conecta -->
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">Conecte</h2>
+          <ul>
+            <li class="mb-1"><a href="contact.html" class="hover:text-white">Contate-nos</a></li>
+          </ul>
+        </div>
+        <!-- Footer Column: Acerca de Nosotros -->
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">Sobre Nós</h2>
+          <ul>
+            <li class="mb-1"><a href="about.html" class="hover:text-white">Sobre Nós</a></li>
+          </ul>
+        </div>
+        <!-- Footer Column: Legal -->
+        <div class="w-full md:w-1/3">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">Legal</h2>
+          <ul>
+            <li class="mb-1"><a href="privacy.html" class="hover:text-white">Política de Privacidade</a></li>
+            <li class="mb-1"><a href="terms.html" class="hover:text-white">Termos e Condições</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-gray-700 pt-4 text-xs">
+        <p>
+          © 2025 UDRS Consulting - Todos os direitos reservados. “Grant Thornton” refere-se à marca sob a qual as firmas membros da Grant Thornton prestam serviços de auditoria, impostos e consultoria. UDRS Consulting é uma firma membro da Grant Thornton International Ltd (GTIL). GTIL e as firmas membros são entidades legais independentes.
+        </p>
+        <br>
+        <p>
+          CNPJ: 78.989.613/0001-90<br>
+          Inscrição Estadual: 8324829-77<br>
+          Endereço: 974 Rua Itaguaí, Mangabeira, Feira de Santana, 44056-516<br>
+          Número de telefone: (75) 2871-8215
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  <script>
+    document.getElementById("form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      
+      document.getElementById("form").innerHTML = '<div class="flex justify-center"><img src="files/loading.gif" width="80"></div>';
+      
+      setTimeout(() => {
+        document.getElementById("form").innerHTML = '<div class="flex justify-center"><p style="font-size: 24px; color: black; font-weight: 700;">Obrigado por se registrar. Um representante entrará em contato com você em breve.</p></div>';
+      }, 2000);
+    });
+  </script>  
+</body>
+</html>
