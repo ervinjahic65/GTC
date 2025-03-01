@@ -94,41 +94,41 @@
 }
 @font-face{
     font-family:'GT-Walsheim-Pro';
-    src:url("/dist/fonts/gt-walsheim-pro-regular/gt-walsheim-pro-regular.woff2") format("woff2"),url("/dist/fonts/gt-walsheim-pro-regular/gt-walsheim-pro-regular.woff") format("woff");
+    src:url("./gt-walsheim-pro-regular.woff2") format("woff2"),url("./gt-walsheim-pro-regular.woff") format("woff");
     font-weight:400;
     font-display:swap
 }
 @font-face{
     font-family:'GT-Walsheim-Pro';
-    src:url("/dist/fonts/gt-walsheim-pro-light/gt-walsheim-pro-light.woff2") format("woff2"),url("/dist/fonts/gt-walsheim-pro-light/gt-walsheim-pro-light.woff") format("woff");
+    src:url("./gt-walsheim-pro-light.woff2") format("woff2"),url("./gt-walsheim-pro-light.woff") format("woff");
     font-style:normal;
     font-weight:350;
     font-display:swap
 }
 @font-face{
     font-family:'GT-Walsheim-Pro';
-    src:url("/dist/fonts/gt-walsheim-pro-medium/gt-walsheim-pro-medium.woff2") format("woff2"),url("/dist/fonts/gt-walsheim-pro-medium/gt-walsheim-pro-medium.woff") format("woff");
+    src:url("./gt-walsheim-pro-medium.woff2") format("woff2"),url("./gt-walsheim-pro-medium.woff") format("woff");
     font-style:normal;
     font-weight:300;
     font-display:swap
 }
 @font-face{
     font-family:'GT-Walsheim-Pro';
-    src:url("/dist/fonts/gt-walsheim-pro-bold/gt-walsheim-pro-bold.woff2") format("woff2"),url("/dist/fonts/gt-walsheim-pro-bold/gt-walsheim-pro-bold.woff") format("woff");
+    src:url("./gt-walsheim-pro-bold.woff2") format("woff2"),url("./gt-walsheim-pro-bold.woff") format("woff");
     font-style:normal;
     font-weight:200;
     font-display:swap
 }
 @font-face{
     font-family:'GT-Walsheim-Pro';
-    src:url("/dist/fonts/gt-walsheim-pro-black/gt-walsheim-pro-black.woff2") format("woff2"),url("/dist/fonts/gt-walsheim-pro-black/gt-walsheim-pro-black.woff") format("woff");
+    src:url("./gt-walsheim-pro-black.woff2") format("woff2"),url("./gt-walsheim-pro-black.woff") format("woff");
     font-style:normal;
     font-weight:100;
     font-display:swap
 }
 @font-face{
     font-family:'GT-IconSet';
-    src:url("/dist/fonts/gt-iconset/gt-iconset.woff2") format("woff2"),url("/dist/fonts/gt-iconset/gt-iconset.woff") format("woff");
+    src:url("./gt-iconset.woff2") format("woff2"),url("./gt-iconset.woff") format("woff");
     font-weight:400;
     font-style:normal;
     font-display:swap
