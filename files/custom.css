@@ -414,6 +414,9 @@ html,body{
 body{
     margin:0
 }
+.main-header {
+    min-height: 100px;
+}
 .overflowHidden,.overflowHidden{
     overflow:hidden
 }
@@ -16498,6 +16501,12 @@ button.nav-link:hover,button.nav-link:active,button.nav-link:focus-visible{
     label.form-check-label {
         display: unset !important;
         padding-left: 0 !important;
+    }
+    .header-logo {
+        margin-top: 50px;
+    }
+    body.scroll-down p {
+        left: 60% !important;
     }
 }
 .glide__slide {
