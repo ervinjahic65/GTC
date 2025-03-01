@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <header class="bg-gray-600 text-white">
+    <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold text-gray-800">
+        <img src="files/logo.png" alt="Logo" class="h-14">
+      </a>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="hover:text-gray-300">Trang Chủ</a></li>
+        <li><a href="about.html" class="hover:text-gray-300">Về Chúng Tôi</a></li>
+        <li><a href="privacy.html" class="hover:text-gray-300">Chính Sách Bảo Mật</a></li>
+        <li><a href="terms.html" class="hover:text-gray-300">Điều Khoản và Điều Kiện</a></li>
+        <li><a href="contact.html" class="hover:text-gray-300">Liên Hệ</a></li>
+      </ul>
+      <button id="hamburger" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-700">
+      <ul class="flex flex-col space-y-2 p-4">
+        <li><a href="index.html" class="block hover:text-gray-300">Trang Chủ</a></li>
+        <li><a href="about.html" class="block hover:text-gray-300">Về Chúng Tôi</a></li>
+        <li><a href="services.html" class="block hover:text-gray-300">Dịch Vụ</a></li>
+        <li><a href="portfolio.html" class="block hover:text-gray-300">Danh Mục Đầu Tư</a></li>
+        <li><a href="contact.html" class="block hover:text-gray-300">Liên Hệ</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">Về Chúng Tôi</h1>
+    <article class="prose max-w-none">
+      <p class="mb-6">
+        Chào mừng bạn đến với phần “Về Chúng Tôi”. Chúng tôi là <strong>UDRS Consulting</strong>, tự hào là đối tác của Grant Thornton, và chúng tôi cam kết cung cấp lời khuyên toàn diện và các giải pháp sáng tạo cho các doanh nghiệp và tổ chức. Kinh nghiệm và cam kết của chúng tôi đã giúp chúng tôi phát triển và thích ứng với một môi trường kinh doanh luôn thay đổi.
+      </p>
+      <p class="mb-6">
+        Với triết lý “Chúng tôi luôn nỗ lực vượt trội.”, chúng tôi cố gắng khám phá mọi cơ hội để thúc đẩy sự chuyển đổi và tiến bộ cho khách hàng của mình. Cách tiếp cận của chúng tôi trải rộng trên nhiều lĩnh vực dịch vụ, chẳng hạn như Kiểm toán, Thuế, Tư vấn, Thuê ngoài, Công nghệ và Tự động hóa quy trình. Mỗi lĩnh vực này được thiết kế để giải quyết những thách thức cụ thể mà các tổ chức phải đối mặt trong thị trường cạnh tranh ngày nay.
+      </p>
+      <p class="mb-6">
+        Trong lĩnh vực Kiểm toán, chúng tôi cung cấp các dịch vụ nhằm mang lại sự minh bạch và tin cậy trong việc trình bày báo cáo tài chính. Chúng tôi làm việc một cách phối hợp, hợp tác và giao tiếp hiệu quả để đảm bảo rằng mỗi báo cáo đáp ứng các tiêu chuẩn cao nhất và thông lệ tốt nhất quốc tế. Các quy trình nghiêm ngặt của chúng tôi cho phép chúng tôi xác định các lĩnh vực cần cải thiện và tối ưu hóa trong quản lý kinh doanh.
+      </p>
+      <p class="mb-6">
+        Mặt khác, các dịch vụ Thuế của chúng tôi dựa trên việc đào tạo liên tục các chuyên gia điều hành của chúng tôi. Chúng tôi cam kết quản lý các thách thức tài chính một cách hoàn toàn minh bạch, bổ sung cho những nỗ lực này bằng tư vấn tài chính mạnh mẽ. Chúng tôi giúp tạo ra giá trị, thúc đẩy tăng trưởng và quản lý rủi ro bằng cách cung cấp các giải pháp được cá nhân hóa, đảm bảo tuân thủ quy định và tối ưu hóa thuế.
+      </p>
+      <p class="mb-6">
+        Trong lĩnh vực Thuê ngoài, chúng tôi tạo điều kiện tối ưu hóa quản trị và kế toán, cho phép các công ty tập trung vào các hoạt động cốt lõi của họ trong khi chúng tôi quản lý các quy trình vận hành và hành chính. Tương tự, trong lĩnh vực Công nghệ, chúng tôi triển khai các công cụ và phương pháp chuyển đổi kỹ thuật số đáp ứng các thách thức hiện đại, tích hợp sự đổi mới và hiệu quả vào từng dịch vụ của chúng tôi.
+      </p>
+      <p class="mb-6">
+        Tự động hóa quy trình là một thành phần quan trọng khác trong các dịch vụ của chúng tôi. Chúng tôi giúp chuyển đổi các hoạt động nội bộ, giảm thời gian và chi phí, đồng thời cải thiện việc ra quyết định bằng dữ liệu chính xác. Bằng cách tận dụng những đổi mới công nghệ mới nhất, chúng tôi cho phép khách hàng của mình thích ứng và phát triển trong một môi trường kinh doanh năng động.
+      </p>
+      <p class="mb-6">
+        Sự lãnh đạo của chúng tôi được thể hiện bởi Tổng Giám đốc và Đối tác Quản lý của chúng tôi, người có tầm nhìn và cam kết truyền cảm hứng cho toàn bộ đội ngũ. Thông điệp của họ rất rõ ràng: “Chúng tôi rất vui mừng vì khách hàng đã công nhận UDRS Consulting là lựa chọn hàng đầu của họ trong số những công ty tư vấn quan trọng nhất trên thế giới.” Triết lý này thúc đẩy tổ chức duy trì giao tiếp cởi mở, hợp tác và hướng đến sự xuất sắc.
+      </p>
+      <p class="mb-6">
+        Tại UDRS Consulting, chúng tôi làm việc hàng ngày để xây dựng các mối quan hệ lâu dài dựa trên sự tin tưởng, chất lượng và thành công chung. Cam kết của chúng tôi là cung cấp một dịch vụ toàn diện không chỉ giải quyết các thách thức hiện tại mà còn chuẩn bị cho khách hàng của chúng tôi trước những yêu cầu của tương lai. Chúng tôi mời bạn tìm hiểu thêm về các giải pháp của chúng tôi và tham gia cùng chúng tôi trên hành trình hướng tới tăng trưởng và đổi mới.
+      </p>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap justify-between">
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">Kết Nối</h2>
+          <ul>
+            <li class="mb-1"><a href="contact.html" class="hover:text-white">Liên Hệ Với Chúng Tôi</a></li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">Về Chúng Tôi</h2>
+          <ul>
+            <li class="mb-1"><a href="about.html" class="hover:text-white">Về Chúng Tôi</a></li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/3">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">Pháp Lý</h2>
+          <ul>
+            <li class="mb-1"><a href="privacy.html" class="hover:text-white">Chính Sách Bảo Mật</a></li>
+            <li class="mb-1"><a href="terms.html" class="hover:text-white">Điều Khoản và Điều Kiện</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-gray-700 pt-4 text-xs">
+        <p>
+          © 2025 UDRS Consulting - Mọi quyền được bảo lưu. “Grant Thornton” đề cập đến thương hiệu mà các công ty thành viên của Grant Thornton cung cấp dịch vụ kiểm toán, thuế và tư vấn. UDRS Consulting là một công ty thành viên của Grant Thornton International Ltd (GTIL). GTIL và các công ty thành viên là các thực thể pháp lý độc lập.
+        </p>
+        <br>
+        <p>
+          BRN: CR545721<br>
+          Địa chỉ: 13 Tsut Kou Ngan South Street Tsik Sit Hồng Kông<br>
+          Điện thoại: 30990879
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
