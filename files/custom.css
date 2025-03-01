@@ -16494,8 +16494,22 @@ button.nav-link:hover,button.nav-link:active,button.nav-link:focus-visible{
         min-height:70vh
     }
 }
+@media (max-width: 768px) {
+    label.form-check-label {
+        display: unset !important;
+        padding-left: 0 !important;
+    }
+}
 .glide__slide {
     pointer-events: none !important;
 }
 /*# sourceMappingURL=onetrust.css.map */
  
+ label.form-check-label {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0 !important;
+}
+input.form-check-input {
+    margin-right: 5px;
+}
