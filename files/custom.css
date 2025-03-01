@@ -15155,7 +15155,7 @@ button.nav-link:hover,button.nav-link:active,button.nav-link:focus-visible{
      outline: 1px solid #000000;
 }
 #onetrust-pc-sdk .ot-vlst-cntr .ot-ext-lnk, #onetrust-pc-sdk .ot-ven-hdr .ot-ext-lnk{
-     background-image: url('https://cdn-ukwest.onetrust.com/logos/static/ot_external_link.svg');
+     background-image: url('./ot_external_link.svg');
 }
  .ot-sdk-cookie-policy{
     font-family:inherit;
@@ -15380,7 +15380,7 @@ button.nav-link:hover,button.nav-link:active,button.nav-link:focus-visible{
      background-color: #F8F8F8;
 }
  .ot-floating-button__front{
-    background-image:url('https://cdn-ukwest.onetrust.com/logos/static/ot_persistent_cookie_icon.png')
+    background-image:url('./ot_persistent_cookie_icon.png')
 }
  #onetrust-consent-sdk #onetrust-pc-sdk,#onetrust-consent-sdk #onetrust-banner-sdk{
     background:rgba(255,255,255,0.9);
