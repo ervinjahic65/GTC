@@ -1,0 +1,524 @@
+@media print {
+    body {
+        margin: 0 !important;
+        color: #000 !important;
+        background-color: #fff !important;
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    h1 {
+        font-size: 2.4rem !important;
+    }
+
+    h2,
+    h3,
+    h4 {
+        font-size: 1.4rem !important;
+        margin-top: 25px !important;
+    }
+    #epi-quickNavigator {display: none !important;}
+    header,
+    footer,
+    aside,
+    nav,
+    form,
+    iframe,
+    .cookie-block,
+    .shortcuts,
+    .mobile,
+    .breadcrumbs,
+    .sectionLink,
+    .mobile-filters {
+        display: none !important;
+    }
+
+    .events-details-container .organiser,
+    .events-details-container .phone,
+    .events-details-container .mail {
+        display: block;
+    }
+
+    [class*="related-content-block-"] {
+        margin-bottom: 10px !important;
+    }
+
+        [class*="related-content-block-"] .item-title,
+        [class*="related-content-block-"] .item-subtitle,
+        [class*="related-content-block-"] .item-read-more {
+            display: block;
+        }
+
+    .dynamic-social-sharing-block .dssb-item-img {
+        max-height: 30px;
+        max-width: 30px;
+    }
+
+    .article-carousel-block .tab-date {
+        display: block;
+    }
+
+    .article-carousel-block .tab-drawer-heading {
+        display: none !important;
+    }
+
+    .article-carousel-block .page-promo-item .title {
+        display: block;
+    }
+
+    .article-carousel-block .page-promo-item,
+    .page-promo-block .page-promo-item {
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+
+    .event-speaker-block .event-speaker-body .event-speaker-image {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center top;
+    }
+
+    .event-speaker-block .title,
+    .event-speaker-block .name,
+    .event-speaker-block .description {
+        display: block;
+    }
+    /*T2 Industry_Service Landing page*/
+    .lrg-promo-content .sectionTag,
+    .lrg-promo-content .big-text,
+    .lrg-promo-content .small-text,
+    .lrg-promo-content .youtube-video {
+        display: block !important;
+        margin-bottom: 15pt !important;
+    }
+
+    .rich-text-block-with-promos .tag,
+    .rich-text-block-with-promos .title {
+        display: block;
+        margin-bottom: 15pt !important;
+    }
+
+    .rich-text-block-with-promos {
+        width: 230px !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-position: right bottom !important;
+    }
+    /*T4 People Landing Page*/
+    .single-expert {
+        /*width: 230px !important;*/
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-position: right bottom !important;
+    }
+
+        .single-expert .sectionTag,
+        .single-expert .name,
+        .single-expert .location,
+        .single-expert .phone,
+        .single-expert .contact-details {
+            display: block !important;
+            margin-bottom: 15pt !important;
+        }
+
+    .change-view-cont,
+    .load-more-container {
+        display: none !important;
+    }
+    /*T5 People Profile Page*/
+    .person-info-block {
+        width: 300px !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-position: bottom right !important;
+    }
+
+        .person-info-block .person-title,
+        .person-info-block .person-adress,
+        .person-info-block .person-phone {
+            display: block !important;
+            margin-bottom: 20pt !important;
+        }
+    /*T9 Insight Landing Page*/
+    .extended-search__load-more-container,
+    .view-more {
+        display: none !important;
+    }
+    /*T19 Press content Page*/
+    .share-this-page-block li {
+        display: inline-block !important;
+    }
+
+    .visually-hidden {
+        display: none !important;
+    }
+    /*T22 Career Jobs Page*/
+    .carrer-vacancy-item .row:nth-child(odd) {
+        background: #fff !important;
+    }
+
+    .carrer-vacancy-item .row:nth-child(even) {
+        background: #e5e5e5 !important;
+    }
+
+    .carrer-vacancy-item .col-xs-6 {
+        width: 45% !important;
+        /*float: left !important;*/
+        display: inline-block;
+    }
+
+    .carrer-vacancy-item .row:before,
+    .row:after {
+        content: " " !important;
+        display: table !important;
+    }
+
+    .vacancy-list-view .col-xs-4 {
+        width: 32% !important;
+        /*float: left !important;*/
+        display: inline-block;
+    }
+
+    .vacancy-list-view .vacancy-row:nth-child(even) {
+        background: #fff !important;
+    }
+
+    .vacancy-list-view .vacancy-row:nth-child(odd) {
+        background: #e5e5e5 !important;
+    }
+    /*T29 Content Hub Page*/
+    .view-all-events {
+        display: none !important;
+    }
+    /* Defining all page breaks */
+    a {
+        page-break-inside: avoid
+    }
+
+    blockquote {
+        page-break-inside: avoid;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        page-break-after: avoid;
+        page-break-inside: avoid
+    }
+
+    img {
+        page-break-inside: avoid;
+        page-break-after: avoid;
+    }
+
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+
+    ul,
+    ol,
+    dl {
+        page-break-before: avoid;
+    }
+
+    .swiper-wrapper {
+        transform: none !important;
+    }
+
+    .correspondent-firm-block .firm-block-container > span,
+    .employee-block .employee-phone,
+    .related-experts-block .expert-social a {
+        display: block;
+    }
+
+    .content-narrow > .container .row {
+        margin-left: -16px;
+        margin-right: -16px
+    }
+
+    iframe[name*="sitePreview"] {
+        max-width: 100% !important
+    }
+
+    * {
+        -webkit-tap-highlight-color: transparent
+    }
+
+    @media (min-width: 1024px) {
+        .col-md-9 .share-this-page-block {
+            position: relative;
+            left: -33.3333333%
+        }
+
+            .col-md-9 .share-this-page-block .share-this-page-block-container {
+                width: calc(100% + 33.3333333%);
+                margin-left: -1.3333333%
+            }
+    }
+
+    @media (min-width: 1024px) {
+        .col-md-9 .shared-block-container-full {
+            position: relative;
+            left: -33.3333333%
+        }
+
+            .col-md-9 .shared-block-container-full .shared-subscribe-block--dark {
+                width: calc(100% + 33.3333333%);
+                margin-left: -1.3333333%
+            }
+    }
+
+    * + .withSecondaryNav .col-md-9 .share-this-page-block {
+        overflow: hidden
+    }
+
+    * + .withSecondaryNav .col-md-9 div div:last-of-type .stpb-container {
+        margin-bottom: -128px
+    }
+
+    @media (max-width: 767px) {
+        * + .withSecondaryNav .col-md-9 div div:last-of-type .stpb-container {
+            margin-bottom: -64px
+        }
+    }
+
+    .col-md-6 .related-content-container .columns .col-md-3 {
+        width: 50%
+    }
+
+    @media (max-width: 767px) {
+        .col-md-6 .related-content-container .columns .col-md-3 {
+            width: 100%
+        }
+    }
+
+    .header__search-form.open .h-search label.reader {
+        position: absolute;
+        top: 3px;
+        left: 18px;
+        clip: auto;
+        overflow: visible;
+        color: #4F2D7F;
+        cursor: text
+    }
+
+    .most-view-pages-title {
+        margin-top: 15px
+    }
+
+    @media (min-width: 768px) and (max-width: 959px) {
+        .mobile.open .row.open .col-sm-offset-1 {
+            margin-left: 0
+        }
+    }
+
+    .browserupgrade {
+        position: relative;
+        color: #000;
+        margin-bottom: 0;
+        padding: 32px 0;
+        z-index: 19;
+        font-size: 1.6rem;
+        text-align: center
+    }
+
+    @media (max-width: 959px) {
+        .browserupgrade {
+            margin-top: 64px
+        }
+    }
+
+    .nojs-alert {
+        padding: 32px 0
+    }
+
+        .nojs-alert p {
+            text-align: center
+        }
+
+    div[style*="z-index: 200"],
+    div[style*="z-index:200"] {
+        z-index: 10 !important
+    }
+
+        div[style*="z-index: 200"] iframe,
+        div[style*="z-index:200"] iframe {
+            overflow: hidden !important
+        }
+
+    div[style*="z-index: 2000000000"],
+    div[style*="z-index:2000000000"] {
+        z-index: 2000000000 !important
+    }
+
+    div[style*="z-index: 200"],
+    div[style*="z-index:200"],
+    div[style*="position: absolute"],
+    div[style*="position:absolute"] {
+        overflow: visible !important
+    }
+
+    .overlay-no-scroll div[style*="z-index: 200"],
+    .overlay-no-scroll div[style*="z-index:200"] {
+        z-index: 102 !important
+    }
+
+    .RTL div[style*="left: 0"]:last-of-type,
+    .RTL div[style*="left:0"]:last-of-type {
+        left: 25px !important
+    }
+
+    .RTL .map div[style*="left: 0"]:last-of-type,
+    .RTL .map div[style*="left:0"]:last-of-type {
+        left: 0 !important
+    }
+
+    .content-narrow > .container .row {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+
+    iframe[name*="sitePreview"] {
+        max-width: 100% !important;
+    }
+
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    @media (min-width: 1024px) {
+        .col-md-9 .share-this-page-block {
+            position: relative;
+            left: -33.3333333%;
+        }
+
+            .col-md-9 .share-this-page-block .share-this-page-block-container {
+                width: calc(100% + 33.3333333%);
+                margin-left: -1.3333333%;
+            }
+    }
+
+    @media (min-width: 1024px) {
+        .col-md-9 .shared-block-container-full {
+            position: relative;
+            left: -33.3333333%;
+        }
+
+            .col-md-9 .shared-block-container-full .shared-subscribe-block--dark {
+                width: calc(100% + 33.3333333%);
+                margin-left: -1.3333333%;
+            }
+    }
+
+    * + .withSecondaryNav .col-md-9 .share-this-page-block {
+        overflow: hidden;
+    }
+
+    * + .withSecondaryNav .col-md-9 div div:last-of-type .stpb-container {
+        margin-bottom: -128px;
+    }
+
+    @media (max-width: 767px) {
+        * + .withSecondaryNav .col-md-9 div div:last-of-type .stpb-container {
+            margin-bottom: -64px;
+        }
+    }
+
+    .col-md-6 .related-content-container .columns .col-md-3 {
+        width: 50%;
+    }
+
+    @media (max-width: 767px) {
+        .col-md-6 .related-content-container .columns .col-md-3 {
+            width: 100%;
+        }
+    }
+
+    .header__search-form.open .h-search label.reader {
+        position: absolute;
+        top: 3px;
+        left: 18px;
+        clip: auto;
+        overflow: visible;
+        color: #4f2d7f;
+        cursor: text;
+    }
+
+    .most-view-pages-title {
+        margin-top: 15px;
+    }
+
+    @media (min-width: 768px) and (max-width: 959px) {
+        .mobile.open .row.open .col-sm-offset-1 {
+            margin-left: 0;
+        }
+    }
+
+    .browserupgrade {
+        position: relative;
+        color: #000;
+        margin-bottom: 0;
+        padding: 32px 0;
+        z-index: 19;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    @media (max-width: 959px) {
+        .browserupgrade {
+            margin-top: 64px;
+        }
+    }
+
+    .nojs-alert {
+        padding: 32px 0;
+    }
+
+        .nojs-alert p {
+            text-align: center;
+        }
+
+    div[style*="z-index: 200"],
+    div[style*="z-index:200"] {
+        z-index: 10 !important;
+    }
+
+        div[style*="z-index: 200"] iframe,
+        div[style*="z-index:200"] iframe {
+            overflow: hidden !important;
+        }
+
+    div[style*="z-index: 2000000000"],
+    div[style*="z-index:2000000000"] {
+        z-index: 2000000000 !important;
+    }
+
+    div[style*="z-index: 200"],
+    div[style*="z-index:200"],
+    div[style*="position: absolute"],
+    div[style*="position:absolute"] {
+        overflow: visible !important;
+    }
+
+    .overlay-no-scroll div[style*="z-index: 200"],
+    .overlay-no-scroll div[style*="z-index:200"] {
+        z-index: 102 !important;
+    }
+
+    .RTL div[style*="left: 0"]:last-of-type,
+    .RTL div[style*="left:0"]:last-of-type {
+        left: 25px !important;
+    }
+
+    .RTL .map div[style*="left: 0"]:last-of-type,
+    .RTL .map div[style*="left:0"]:last-of-type {
+        left: 0 !important;
+    }
+}

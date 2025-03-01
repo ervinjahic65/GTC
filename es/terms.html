@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Términos y Condiciones</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+<body class="flex flex-col min-h-screen">
+
+  <!-- Navigation -->
+  <header class="bg-gray-600 text-white">
+    <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold text-gray-800">
+        <img src="files/logo.png" alt="Logo" class="h-14">
+      </a>
+      <!-- Menú de Escritorio -->
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="hover:text-gray-300">Inicio</a></li>
+        <li><a href="about.html" class="hover:text-gray-300">Acerca</a></li>
+        <li><a href="privacy.html" class="hover:text-gray-300">Política de privacidad</a></li>
+        <li><a href="terms.html" class="hover:text-gray-300">Términos y condiciones</a></li>
+        <li><a href="contact.html" class="hover:text-gray-300">Contacto</a></li>
+      </ul>
+      <!-- Botón de Hamburguesa -->
+      <button id="hamburger" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+    <!-- Menú Móvil -->
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-700">
+      <ul class="flex flex-col space-y-2 p-4">
+        <li><a href="index.html" class="block hover:text-gray-300">Inicio</a></li>
+        <li><a href="about.html" class="block hover:text-gray-300">Acerca</a></li>
+        <li><a href="services.html" class="block hover:text-gray-300">Servicios</a></li>
+        <li><a href="portfolio.html" class="block hover:text-gray-300">Portafolio</a></li>
+        <li><a href="contact.html" class="block hover:text-gray-300">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">Términos y Condiciones</h1>
+    <article class="prose max-w-none">
+      <p class="mb-6">
+        Bienvenido a UDRS Consulting. Estos Términos y Condiciones regulan el uso de nuestro sitio web y los servicios que ofrecemos. Al acceder y utilizar nuestro sitio, aceptas estar sujeto a estos términos, por lo que es importante que los leas detenidamente.
+      </p>
+      <p class="mb-6">
+        <strong>Uso del Sitio Web:</strong> El contenido, los servicios y la funcionalidad ofrecidos en este sitio web son proporcionados únicamente para fines informativos y comerciales. Queda prohibido el uso no autorizado o fraudulento de la información, así como cualquier actividad que pueda dañar o interrumpir el funcionamiento del sitio.
+      </p>
+      <p class="mb-6">
+        <strong>Propiedad Intelectual:</strong> Todo el contenido, marcas, logotipos, imágenes, textos, videos y otros elementos presentes en este sitio son propiedad exclusiva de UDRS Consulting o de terceros que han autorizado su uso. No se permite la reproducción, distribución o modificación del contenido sin el consentimiento previo y por escrito de UDRS Consulting.
+      </p>
+      <p class="mb-6">
+        <strong>Limitación de Responsabilidad:</strong> UDRS Consulting no será responsable por daños directos, indirectos, incidentales, consecuentes o punitivos que puedan derivarse del uso o la imposibilidad de uso del sitio web, ni por la información contenida en él. La información se proporciona “tal cual” y sin garantías de ningún tipo.
+      </p>
+      <p class="mb-6">
+        <strong>Modificaciones y Actualizaciones:</strong> Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento. Las actualizaciones se publicarán en el sitio web y entrarán en vigor inmediatamente después de su publicación. El uso continuo del sitio constituirá la aceptación de los términos actualizados.
+      </p>
+      <p class="mb-6">
+        <strong>Política de Privacidad:</strong> El manejo de tus datos personales se rige por nuestra Política de Privacidad, la cual forma parte integral de estos Términos. Te recomendamos revisarla para comprender cómo recopilamos, usamos y protegemos tu información.
+      </p>
+      <p class="mb-6">
+        <strong>Enlaces a Terceros:</strong> Este sitio web puede contener enlaces a sitios web de terceros. UDRS Consulting no tiene control sobre el contenido o las prácticas de privacidad de dichos sitios y no asume ninguna responsabilidad por ellos. Se recomienda a los usuarios que lean las políticas y términos de uso de cualquier sitio web de terceros al que accedan.
+      </p>
+      <p class="mb-6">
+        <strong>Resolución de Conflictos:</strong> Cualquier disputa que surja en relación con el uso de este sitio web será sometida a la jurisdicción de los tribunales competentes de la localidad donde se encuentre UDRS Consulting, y se regirá por las leyes aplicables. Se insta a los usuarios a resolver amistosamente cualquier conflicto antes de recurrir a acciones legales.
+      </p>
+      <p class="mb-6">
+        <strong>Aceptación de los Términos:</strong> Al utilizar nuestro sitio web, confirmas que has leído, entendido y aceptado estos Términos y Condiciones en su totalidad. Si no estás de acuerdo con alguno de los términos, te recomendamos que no utilices el sitio.
+      </p>
+      <p class="mb-6">
+        En UDRS Consulting, nos comprometemos a ofrecer un servicio de calidad y transparente. Si tienes alguna pregunta o inquietud acerca de estos Términos y Condiciones, no dudes en contactarnos.
+      </p>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap justify-between">
+        <!-- Footer Column: Conecta -->
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">Conecta</h2>
+          <ul>
+            <li class="mb-1"><a href="contact.html" class="hover:text-white">Contáctanos</a></li>
+          </ul>
+        </div>
+        <!-- Footer Column: Acerca de Nosotros -->
+        <div class="w-full md:w-1/3 mb-6 md:mb-0">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">Acerca de Nosotros</h2>
+          <ul>
+            <li class="mb-1"><a href="about.html" class="hover:text-white">Acerca de Nosotros</a></li>
+          </ul>
+        </div>
+        <!-- Footer Column: Legal -->
+        <div class="w-full md:w-1/3">
+          <h2 class="text-sm font-semibold uppercase tracking-widest mb-2">Legal</h2>
+          <ul>
+            <li class="mb-1"><a href="privacy.html" class="hover:text-white">Política de Privacidad</a></li>
+            <li class="mb-1"><a href="terms.html" class="hover:text-white">Términos y Condiciones</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-8 border-t border-gray-700 pt-4 text-xs">
+        <p>
+          © 2025 UDRS Consulting - Todos los derechos reservados. “Grant Thornton” se refiere a la marca bajo la cual las firmas miembro de Grant Thornton prestan servicios de auditoría, impuestos y consultoría. UDRS Consulting es una firma miembro de Grant Thornton International Ltd (GTIL). GTIL y las firmas miembro son entidades legales independientes.
+        </p>
+        <br>
+        <p>
+          CNPJ: 78.989.613/0001-90<br>
+          Inscrição Estadual: 8324829-77<br>
+          Endereço: 974 Rua Itaguaí, Mangabeira, Feira de Santana, 44056-516<br>
+          Número de telefone: (75) 2871-8215
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
